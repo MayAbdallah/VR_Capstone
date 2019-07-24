@@ -1,6 +1,8 @@
 # Capston Project
 Name: May AlSohibani
 
+The project is : 
+The player has to search for a truck toy in the store in order to give it for the crying kid during 3 minutes.
 
 ## Versions
 - Unity 2017.4.15
