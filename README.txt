@@ -2,7 +2,9 @@
 Name: May AlSohibani
 
 The project is : 
-The player has to search for a truck toy in the store in order to give it for the crying kid during 3 minutes.
+The player tries to find a truck toy in the store and gives it to the kid for him to stop crying and become happy during 3 minutes.
+
+Emotions: Crying & Laughing.
 
 ## Versions
 - Unity 2017.4.15
@@ -28,6 +30,7 @@ The player has to search for a truck toy in the store in order to give it for th
 
 **Challenges
 9- Compute Shader achievement
+10- User Testing achievement
 
 
 - Sound effects form: (https://freesound.org)
@@ -35,6 +38,9 @@ The player has to search for a truck toy in the store in order to give it for th
    2. Crying Sound.
    3. Laughs Sound.
    4. Video Sound.
+
+- Charchter & Animation: from
+https://www.mixamo.com/
 
 - Environment:
 1. Chris Toys R Us new exit sign
