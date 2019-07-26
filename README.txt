@@ -8,11 +8,10 @@ Emotions: Crying & Laughing.
 
 ## Versions
 - Unity 2017.4.15
-- SteamVR v2.0.1
+- SteamVR v2.3.2
 ##
 - Target platform: Vive and Rift
-- Gameplay Video:(https://)
-- Achievements Video:(https://)
+- Achievements Video:(https://youtu.be/IEjEWZULsPE)
 
  Achievements list:
 

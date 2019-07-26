@@ -31,6 +31,7 @@ public class Winning : MonoBehaviour
             kidAnimator.avatar = jumpingAvatar;
             soundLaughing.clip = clipLaughing;
             soundLaughing.Play();
+            kidAnimator.Play("Jumping", 0, 0);
         }
     }
 }

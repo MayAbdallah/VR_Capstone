@@ -59,6 +59,18 @@ public class GameLogic : MonoBehaviour {
             WaitTime(1);
             targetTime -= Time.deltaTime;
 
+            if (targetTime < 0)
+            {
+                // we have reched the time
+                instance.gameOverPanel.SetActive(true);
+
+                StartCoroutine(WaitTimeSeconds(5));
+                //WaitTimeSeconds(5);
+               // WaitTime(5);
+ 
+            }
+            else { 
+
             // minutes = targetTime / 60;
             minutes = Mathf.Floor(targetTime / 60);
             // seconds = targetTime % 60;
@@ -82,41 +94,27 @@ public class GameLogic : MonoBehaviour {
             }
 
             timeText.text = minutesString + ":" + secondsString;
-
-            if (targetTime <= 0)
-            {
-                
-                
-
-                // we have reched the time
-                instance.gameOverPanel.SetActive(true);
-
-                StartCoroutine(WaitTimeSeconds(5));
-                WaitTimeSeconds(5);
-
-                Reset();
             }
+
         }
     }
 
     IEnumerator WaitTime(int sec)
     {
         //if (sec == 5) { Debug.Log("WaitTime (5) "); }
-
         yield return new WaitForSeconds(sec);
     }
-
+    
     IEnumerator WaitTimeSeconds(int sec)
     {
         yield return new WaitForSeconds(sec);
+        //StopCoroutine("WaitTime");
+        Reset();
     }
 
     void Reset()
     {
         // do resert logic if needed
-
-        StopCoroutine("WaitTimeSeconds");
-        StopCoroutine("WaitTime");
 
         theTimingProcessIsRunning = false;
         targetTime = 180;
@@ -128,6 +126,9 @@ public class GameLogic : MonoBehaviour {
         EnteringTheStore.instance.soundVideoToysRUS.Stop();
 
         CancelInvoke("Cry"); //To stop Animator
+
+        StopCoroutine("WaitTimeSeconds");
+        
     }
 
 
